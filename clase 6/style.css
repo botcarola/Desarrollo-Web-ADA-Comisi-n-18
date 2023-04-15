@@ -1,0 +1,49 @@
+.custom-body {
+    background-color: #a5d6a7;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-verduleria {
+    background-color: #f7f7fc;
+    width: 280px;
+    margin: auto;       
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    text-align: center;
+    padding: 10px 15px 30px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 150px;
+}
+
+.grosor-mayor {
+    font-weight: 700;
+}
+
+.grosor-menor {
+    font-weight: 400;
+    color: #39334e;
+}
+
+.color-parrafo {
+    color: #7d7aa4;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+li {
+    width: 35%;
+    text-align: start;
+    margin: auto;
+    margin-bottom: 10px;    
+    padding: 5px 35px;
+    background-color: white;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 15px;    
+}

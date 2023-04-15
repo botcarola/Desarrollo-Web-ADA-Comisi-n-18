@@ -1,0 +1,58 @@
+.container {
+    background-color: blanchedalmond;
+}
+
+body {
+    background-color: aliceblue;
+    
+    font-family: 'Roboto', sans-serif;
+}   
+
+#subtitulo-contacto {
+    color: brown;
+}
+
+.subtitulo-mediano {
+    font-size: 18px;
+    color:blue;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    text-align: justify; 
+    line-height: 30px;   
+}
+
+/* COLORES NOMBRADOS */
+
+.pie-de-pagina {
+    background-color: salmon;
+}
+
+/* colores RGB */
+
+.subtitulo-footer {
+    background-color: rgb(4, 255, 0)
+}
+
+/* HEXADECIMAL */
+
+ul {
+    background-color: #07178c;
+}
+
+/* HSL */
+
+li {
+    background-color: hsl(48, 100%, 48%);
+    font-size: 15px;
+}
+
+h1 {
+    color: #ff69b4;    
+    font-weight: 300; 
+    font-family: 'Noto Sans JP', sans-serif;  
+    font-style: italic;
+    text-align: center;
+}

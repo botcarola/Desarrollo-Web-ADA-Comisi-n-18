@@ -1,0 +1,25 @@
+.card {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(220, 219, 219);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;    
+}
+
+.fondo-amarillo {
+    background-color: yellow;
+}
+
+.fondo-rojo {
+    background-color: red;
+}
+
+.fondo-azul {
+    background-color: blue;
+}
+
+#card-fondo-violeta {
+    background-color: blueviolet;
+}

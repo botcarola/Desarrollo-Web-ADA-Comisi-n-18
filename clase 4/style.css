@@ -1,0 +1,42 @@
+/* SELECTORES DE ETIQUETA
+ES LA FORMA EN LA CUAL LLAMAMOS A LAS ETIQUETAS, POR SU NOMBRE DE ETIQUETA, PARA MODIFICAR LOS ESTILOS
+ */
+
+/*
+
+"TODAS LAS ETIQUETAS QUE SEAN X, VAN A TENER ESTAS PERSONALIZACIONES"
+
+*/
+
+body {
+    background-color: blueviolet;
+    background-color: brown;
+    /* siempre va a prevalecer el último valor, es decir que la cascada pisa el valor anterior */
+    background-color: rgb(69, 0, 103);
+}
+
+h1 {
+    color: white;
+    background-color: red;
+}
+
+p {
+    color: rgb(208, 234, 225);
+}
+
+
+/* SELECTORES DE CLASE 
+"A TODOS LOS ELEMENTOS QUE TENGAN LA CLASE X APLICALE ESTOS ESTILOS
+*/
+
+.parrafo-color {
+    color: blue;
+}
+
+/* SELECTOR DE IDENTIFICADOR 
+"AL ELEMENDO QUE TENGA EL ID ÚNICO, APLICALE ESTOS ESTILOS"
+*/
+
+#parrafo-unico {
+    color:coral;    
+}
