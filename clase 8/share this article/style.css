@@ -1,0 +1,51 @@
+body {
+    background-color: #606265;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ebeced;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px;
+    border: 1px solid rgb(217, 216, 216);
+    border-radius: 10px;
+}
+
+p {    
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    width: 380px;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.red {
+    padding: 5px;
+    width: 100px;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0;
+}
+
+span {
+    font-weight: 300;
+}
+
+h4 {
+    color: orange;
+}

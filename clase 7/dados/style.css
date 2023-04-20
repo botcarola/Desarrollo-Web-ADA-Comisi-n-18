@@ -1,0 +1,62 @@
+body {
+    background-color: #d3d3d3;
+    margin: 0;
+}
+
+.dado {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.punto-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dado-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-puntos {
+    width: 80%;
+    height: 80%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-punto-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor-punto-medio {
+    display: flex;
+    justify-content: center;
+}
+
+.puntos-pares {
+    display: flex;
+    justify-content: space-between;
+}
+

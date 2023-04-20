@@ -1,0 +1,56 @@
+.container {
+    display: flex; 
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+    background-color: blueviolet;     
+}
+
+.box {
+    margin: 5px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 1px solid grey;         
+}
+
+.box-1 {
+    order: 1;
+}
+
+.box-2 {
+    order: 3;
+    align-self: stretch;
+}
+
+.box-3 {
+    order: 2
+}
+
+.box-4 {
+    order: 2;
+}
+
+.box-5 {
+    order: 4;
+}
+
+/* .contenedor-mayor {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-prueba {
+    width: 70%;
+    height: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;       
+}
+
+.caja {
+    background-color: antiquewhite;
+    padding: 10px;
+    height: 100px;
+    flex-grow: 1;
+    margin: 10px;
+} */
