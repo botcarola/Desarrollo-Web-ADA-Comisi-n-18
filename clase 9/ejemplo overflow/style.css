@@ -1,0 +1,27 @@
+.div-desbordado {
+    width: 150px; 
+    height: 150px;   
+    border: 3px solid black;
+    overflow: hidden;  
+    margin: 30px;  
+}
+
+.div-sin-desborde {
+    width: 150px;       
+    border: 3px solid black;      
+    margin: 30px; 
+}
+
+/* CÓMO AJUSTAR EL TAMAÑO DE UNA IMAGEN */
+
+.container-img {
+    width: 300px;
+    height: 150px;
+    
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}

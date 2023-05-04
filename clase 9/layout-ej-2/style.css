@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+div {
+    flex-grow: 6;
+}
+aside {
+    flex-grow: 2;
+    background-color: #ff99ff;
+}
+
+.alinear-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-web {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 2;
+    background-color: #ffc9ff;
+}
+
+main {
+    flex-grow: 8;
+}
+
+footer {
+    flex-grow: 1;
+    background-color: #cb87f5;
+}

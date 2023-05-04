@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;  
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.fa-bars {
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 100px;
+    background-color: antiquewhite;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container-header {
+    background-color: #ffc9ff;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.container-main-aside {
+    display: flex;
+    height: 700px;
+}
+
+aside {
+    flex-grow: 2;
+    background-color: #ff99ff;   
+}
+
+main {
+    flex-grow: 5;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #cb87f5;
+    padding: 30px 0px;
+}

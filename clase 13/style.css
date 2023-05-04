@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: bisque;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+/* podemos hacer uso de calc para generar operaciones para calcular medidas
+
+- CSS permite realizar cálculos con valores numéricos utilizando la función calc().
+
+- Esto puede ser útil para ajustar dimensiones y márgenes de manera dinámica en función de otros valores.
+
+calc(<expresión>)
+
+*/
+
+.card {
+    width: calc( 200px + 10px);
+    height: calc(220px - 20px);
+    margin: calc(10* 20px);
+    background-color: red;
+}
+
+/* max-width
+    ¿Cómo actúa max-width en una media query?
+    - COMO MÁXIMO, EN RELACIÓN AL VALOR EN PÍXELES QUE LE PASAMOS, VA A SOBREESCRIBIR LOS VALORES DE LAS PROPIEDADES
+
+*/
+/*
+@media ( max-width: 1220px ) {
+    .lista-nav {
+        width: 30%;
+    }
+    nav {
+        background-color: blue;
+    }
+}
+
+@media ( max-width: 800px ) {
+    .lista-nav {
+        width: 40%;
+    }
+    nav {
+        background-color: coral;
+    }
+}
+
+@media( max-width: 600px ) {
+    .lista-nav {
+        width: 50%;
+    }
+    nav {
+        background-color: red;
+    }
+} */
+
+/* si bien es una posibilidad, no es necesario implementar una condición doble en relación al width y heigth */
+
+/* 
+@media (max-width: 395px) and (max-height: 845px) {
+
+    nav {
+        background-color: red;        
+    }
+
+    .lista-nav {
+        width: 60%;
+    }
+
+} */
+
+/* PODEMOS UTILIZAR min-width y min-height
+ "A PARTIR DE ESTE TAMAÑO, COMO MÍNIMO, QUIERO QUE MODIFIQUES CIERTAS PROPIEDADES"
+ */
+/* 
+@media ( min-width: 400px ) {
+
+    nav {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media ( min-width: 600px ) {
+
+    nav {
+        background-color: rgb(156, 14, 14);
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media ( min-width: 800px ) {
+
+    nav {
+        background-color: rgb(14, 24, 156);
+        color: rgb(0, 0, 0);
+    }
+} */
+/* 
+@media ( min-width: 800px) {
+    .lista-nav {
+        width: 50%;
+    }
+}
+
+@media ( min-width: 1000px ) {
+    .lista-nav {
+        width: 20%;
+    }
+}
+
+@media ( min-width: 400px) and ( min-height: 800px ) {
+    nav {
+        background-color: blueviolet;
+    }
+} */
+
+@media ( min-width: 600px ) and ( max-width: 800px ) {
+    nav {
+        background-color: red;
+    }
+}
