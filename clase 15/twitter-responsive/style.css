@@ -1,0 +1,180 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #000000;
+    border-top: 1px solid grey;
+}
+
+.navigation-list {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.fa-solid {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.fa-regular {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.encabezado-tweet {
+    display: flex;
+}
+
+.arrow-icon {
+    display: flex;
+    align-items: center;
+    padding: 0px 40px 0px 20px;   
+}
+
+.fa-arrow-left {
+    font-size: 18px;
+}
+
+main {
+    background-color: #000000;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.nasa-logo{
+    width: 60px;    
+    background-color: white;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.nasa-img {
+    width: 100%;      
+}
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-user {
+    width: 90%;    
+    display: flex;     
+}
+
+
+.user-twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.username-tweet {
+    font-weight: 300;    
+}
+
+.fa-circle-check {
+    font-size: 15px;
+}
+
+.text-tweet {
+    width: 90%;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.text-link {
+    color: blue;
+}
+
+.img-tweet-container {
+    width: 90%;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+}
+
+.img-tweet {
+    width: 100%;
+}
+
+.nav-main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    border-right: 1px solid grey;
+    
+}
+
+.icon-hide {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+@media ( min-width: 500px ) {
+    .nav-main-container {
+        flex-direction: row;
+    }
+
+    .navigation-list {
+        flex-direction: column;        
+        padding: 20px;
+    }
+
+    .navigation {
+        border-top: none;
+        border-right: 1px solid grey;
+    }
+
+    .icon-hide {
+        display: list-item;
+    }
+}
+
+@media ( min-width: 700px ) {
+    .nav-main-container {
+        width: 600px;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media ( min-width: 1005px ) {
+
+    .nav-main-container {
+        width: 50%;
+    }
+    aside {
+        display: block;
+        width: 20%;
+    }
+
+    .navigation-list {
+        height: 100vh;
+    }
+}

@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+/* 
+
+div {   
+    background-color: aquamarine;
+    height: 1000px;
+}
+
+p {   
+    background-color: blueviolet;
+    margin: 0;
+}
+
+/* SI NO HAY UNA MEDIDA FIJA SOBRE EL HEIGHT, EL PORCENTAJE ES 0, PORQUE LOS ELEMENTOS NO TIENEN UN ALTO FIJO, EL ALTO DEPENDE DE SU CONTENEDOR O QUE MODIFIQUEMOS EL HEIGHT */
+
+/* .p-secundaria {
+    height: 80%;
+} */
+
+/* las etiquetas inline no tienen ni ancho ni alto, dependen exclusivamente de su contenido, a la hora de ocupar un espacio */
+
+/* span {
+    background-color: red;
+}  */
+/* 
+
+ejemplo css para uso de em 
+- dependemos de que el padre tenga una medida absoluta para ser mutlplicada con el hijo 
+.contenedor-padre {
+
+    font-size: 30px;
+}
+
+p {
+    font-size: 2em;
+}
+ */
+/* 
+html {
+    font-size: 1px;
+}
+
+.contenedor-rem {
+    font-size: 100px;
+}
+
+.hijo-rem {
+    font-size: 2rem;
+} */
+
+
+/* .container {
+   min-height: 100vh;
+   background-color: aquamarine;
+   
+} */
+
+/* p {
+    font-size: 4vmax;
+} */
+
+.container-img {
+    width: 200px;
+    height: 200px;    
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}

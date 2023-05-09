@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 1px;
+}
+
+nav {
+    height: 10vh;
+    background-color: antiquewhite;
+}
+
+main {
+    height: 80vh;
+    background-color: orange;
+}
+
+footer {
+    height: 10vh;
+    background-color: blueviolet;
+}
+
+p {
+    margin: 0;
+    font-size: 20rem;
+}
+
+
+@media ( max-width: 600px ) {
+    p {
+        font-size: 14rem;
+    }
+}
+
+@media ( max-width: 460px ) {
+    p {
+        font-size: 12rem;
+    }
+}
+
+@media ( max-width: 390px ) {
+    p {
+        font-size: 11rem;
+    }
+}
+
+@media ( max-width: 330px ) {
+    p {
+        font-size: 10rem;
+    }
+}

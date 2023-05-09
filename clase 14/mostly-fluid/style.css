@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+nav {
+    min-height: 10vh;
+    background-color: aqua;
+}
+
+header {
+    min-height: 40vh;
+    background-color: brown;
+}
+
+main {
+    height: 400px; 
+    display: flex;       
+}
+
+footer {
+    min-height: 10vh;
+    background-color: violet;
+}
+
+.section-a {
+    width: 50%;
+    height: 100%;
+    background-color: yellowgreen;
+}
+
+.section-b {
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+@media ( max-width: 500px ) {
+    main {
+        flex-direction: column;
+    }
+
+    .section-a {
+        width: 100%;
+    }
+
+    .section-b{
+        width: 100%;
+    }
+}

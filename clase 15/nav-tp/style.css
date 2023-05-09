@@ -1,0 +1,35 @@
+ul {
+    list-style: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;    
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+}
+
+header {
+    background-color: yellowgreen;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background-color: antiquewhite;
+}
+
+h2 {
+    margin: 0;
+}
