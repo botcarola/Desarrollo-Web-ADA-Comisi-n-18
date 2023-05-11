@@ -1,0 +1,47 @@
+div {
+
+}
+
+.caja {
+
+}
+
+#container {
+
+}
+
+textarea {
+    resize: none;
+}
+
+#form-nombre-apellido-usuario {
+    width: 200px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+input {
+    width: 90%;  
+    padding: 10px;  
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.label-submit {
+    display: flex;
+    justify-content: center;
+}
+
+#input-submit {
+    width: 70px;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--FORM, CON INPUT DE TIPO TEXTO/SUBMIT -->
+    
+    <form id="form-nombre-apellido-usuario" novalidate>
+        <label for="input-name">Nombre:</label>
+        <input type="text" id="input-name" placeholder="Carola" required>    
+        <label for="input-lastname">Apellido:</label>
+        <input id="input-lastname" type="text" placeholder="Lerner" required>
+        <label class="label-submit" for="input-submit">            
+            <input id="input-submit" type="submit">
+        </label>
+    </form>
+
+    <!-- 
+        FORM email/password/submit
+        - si el label contiene al input, el label no va a precisar el atributo for, porque ya lo reconoce al input como suyo y lo representa
+    -->
+
+    <form id="form-edad-usuario">
+        <label>
+            Email
+            <input type="email" placeholder="Ej: carola123@gmail.com">
+        </label>
+        <label>
+            Contraseña
+            <input type="password" id="input-password">
+        </label>
+        <label>
+            <input type="submit">
+        </label>
+    </form>
+
+    <!--
+        form checkbox
+    -->
+
+    <form id="form-paises">
+        <label>
+            <input type="checkbox" value="sarasa"> Vivís en un país?
+        </label>
+        <label>
+            <input type="checkbox" value="arasad"> Vivís en el planeta tierra?
+        </label>        
+    </form>
+
+    <!-- RADIOS QUE COMPARTEN EL MISMO NAME, ESTO GENERA QUE SOLO PUEDA SELECCIONARSE UNO DEL GRUPO-->
+
+    <form>
+        <p>¿Cuál es tu lenguaje de programación favorito?</p>
+        <input type="radio" id="opcion1" name="lenguaje" value="python">
+        <label for="opcion1">Python</label><br>
+        <input type="radio" id="opcion2" name="lenguaje" value="javascript">
+        <label for="opcion2">JavaScript</label><br>
+        <input type="radio" id="opcion3" name="lenguaje" value="java">
+        <label for="opcion3">Java</label><br>
+        <input type="radio" id="opcion4" name="" value="csharp">
+        <label for="opcion4">C#</label><br>
+    </form>
+
+    <!--
+        FORM CON INPUT NUMBER
+    -->
+
+    <form>
+        <label>
+            Edad
+            <input type="number" min="0" max="99" step="1" placeholder="0">
+        </label>
+    </form>
+    
+    <!--
+        form select
+    -->
+
+    <form id="form-lista">
+        <label>
+            Selecciona tu fruta favorita
+            <select name="frutas">
+                <option hidden selected value="">Elija una opción</option>
+                <option value="manzana">Manzanas</option>
+                <option value="pera">Peras</option>
+                <option value="banana">Bananas</option>
+            </select>
+        </label>
+    </form>
+
+    <!-- form con text area
+    -->
+
+    <form>
+        <label for="comentarios">
+            Comentarios
+        </label>
+        <textarea id="comentarios" placeholder="Escriba aquí" maxlength="5"></textarea>
+    </form>
+    
+</body>
+</html>
