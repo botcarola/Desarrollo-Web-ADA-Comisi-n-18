@@ -1,0 +1,130 @@
+
+
+.box {
+    background-color: blue;
+}
+
+#box-1 {
+    background-color: green;
+}
+
+/* 
+
+Sintaxis selector atributos
+
+selector[atributo] {
+
+} 
+
+*/
+
+a[href="#contacto"] {
+    font-size: 50px;
+    color: brown;
+}
+
+[href] {
+    background-color: yellow;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/* expresiones regulares dentro de un selector de atributos 
+
+cuando usamos *, dentro del selector de atributo, le pedimos que busque la clase que coincida con el valor incorporado en el atributo
+
+*/
+
+div[class*="mediano"] {
+    background-color: purple;
+}
+
+/*
+La expresión ^ permite filtrar y llamar a todos los elementos que comiencen o coincidan con una letra o varias
+*/
+
+div[class^="c"] {
+    font-size: 25px;
+}
+
+/*
+La expresión $ selecciona a todos los elementos que tengan un valor que termine con lo especificado.
+*/
+
+img[src$="g"] {
+    width: 100px;
+}
+
+img[src$="g"] {
+    width: 50px;
+}
+
+/*
+   selector de hermanos
+   - selector que permite seleccionar a todos los elementos que siguen a otro  elemento en el mismo nivel de jerarquía
+*/
+
+.container {
+    margin: 20px;
+    background-color: antiquewhite;
+}
+
+.container2 {
+    margin: 20px;
+    background-color: rgb(187, 157, 118);
+}
+
+.mayor ~ p {
+   background-color: green;
+}
+
+/*
+selector de hermanos adyacentes
+*/
+
+.hermanoMayor + h3 {
+    color: red;
+}
+
+/*
+ SELECTOR DESCENDIENTE
+ El selector descendiente es un selector que permite seleccionar a todos los elementos uqe son descendientes directos o indirectos de otro elemento en el árbol DOM
+*/
+
+.lista li {
+    color: violet;
+}
+
+.container-img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* SELECTOR DESCENDIENTE DIRECTO
+>
+Este selector permite seleccionar SOLAMENTE a los elementos que son descendientes directos, es decir: hijos
+*/
+
+.lista-roja > li {
+    color: red;
+}
+
+/*
+SELECTOR UNIVERSAL 
+Es el selector que selecciona atodos los elementos en el árbol DOM
+*/
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+

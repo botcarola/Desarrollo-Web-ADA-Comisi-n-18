@@ -1,0 +1,169 @@
+/*
+PSEUDOCLASE
+
+- Es una palabra que se añade a los selectores y que especifica un estado especial de un elemento seleccionado.
+
+- Siempre se agregan a un selector válido
+
+*/
+
+/*
+:after
+
+añade un contenido adicional al final de el contenido de un elemento seleccionado a través de su selector
+
+sintaxis:
+
+selector:after {
+    content: "cualquier cosa";
+*/
+
+li:after {
+    content: "😈";
+    font-size:10px;
+}
+
+/*
+:before 
+
+incorpora al principio del contendio, un elemento adicional a un elemento a través de su selector
+
+selector:before {
+    content: "lo que sea"
+*/
+
+ul {
+    list-style: none;
+}
+
+li:before {
+    content: "😂"
+}
+
+
+/*
+:not
+
+- se excluyen a estos elementos de recibir un estilo
+
+sintaxis
+
+selector:not(otro-selector) {
+}
+
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box:not(.sin-efecto):not(.otra-caja) {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+}
+
+.sin-efecto {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.otra-caja {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+/*
+
+:nth-child()
+
+- se utiliza para seleccionar elementos basados en su posición en relación con sus hermanos.
+
+- Con esta pseudoclase se pueden seleccionar elementos basados en su índice utilizando una fórmula matemática
+
+*/
+
+p:nth-child(odd) {
+    color: blueviolet;
+    font-weight: 900;
+}
+
+/* p:nth-child(even) {
+    color: palevioletred;
+    font-weight: 900;
+} */
+
+/* p:nth-child(2n+1) {
+    color: palevioletred;
+    font-weight: 900;
+} */
+
+/* p:nth-child(5) {
+    color: palevioletred;
+    font-weight: 900;
+} */
+
+/*
+:nth-of-type
+
+- se utiliza para seleccionar elementos basados en posición con sus hermanos DEL MISMO TIPO DE ELEMENTO
+*/
+
+.container-nthoftype {
+    background-color:aquamarine;
+}
+
+h3:nth-of-type(odd) {
+    color: red;
+}
+
+/* 
+:hover
+
+- aplica un cambio a un elemento a través de un evento de mouse
+
+*/
+
+.box-color {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+.box-color:hover {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
+
+li:hover {
+    color: red;
+}
+
+/*
+
+:active 
+
+- es una que se presenta cuando un elemento es activado por el usuario
+
+- la accion se detona cuando se preciona el botón principal del mouse sobre el elemento y siempre y cuando este elemento sea interactivo
+
+- ESTA CLASE SOLO SE VE VISIBLE SIEMPRE Y CUANDO EL USUARIO MANTENGA EL CLICK SOBRE EL ELEMENTO
+
+*/
+
+button {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+button:active {
+    background-color: red;
+    color: white;
+}
