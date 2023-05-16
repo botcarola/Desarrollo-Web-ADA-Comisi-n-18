@@ -1,0 +1,113 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+position: static, es el valor predeterminado de la propiedad. Los elementos se colocan en su posición normal en el flujo del documento y no se ven afectados por las propiedades top, bottom, left y right.
+TAMPOCO PUEDE USARSE Z-INDEX EN ELLOS
+*/
+
+.box-static {
+    position: static;
+}
+
+/*
+    las propiedades top, bottom, left y right son propiedades relacionadas con el posicionamiento del elemento.
+*/
+
+/* position: fixed 
+Este tipo de posicionamiento está relacionado al marco de la ventana del navegador, además se ve afectado por las propiedades top, bottom, left, right. También puede recibir z-index.
+
+El elemento no respeta el espacio reservado de sus hermanos, ya que su posición es relativa al navegador.
+*/
+
+.box-fixed {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: purple;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+}
+
+/*
+POSITION RELATIVE: los elementos se posicional en relación a su posición normal en el flujo del documento.
+
+Puede recibir top, left, right y bottom
+también z-index
+*/
+
+.box-relative {
+    background-color: violet;
+    margin: 40px;
+    position: relative; 
+    z-index: 0; 
+}
+
+.fa-solid {
+    position: relative;
+    left: 30px;   
+
+}
+
+input {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+/* POSITION ABSOLUTE 
+
+LOS ELEMENTOS SON POSITION ABSOLUTE SE POSICIONAN EN RELACIÓN A SU ELEMENTO PRIMARIO QUE TENGA UNA POSICIÓN RELATIVE O EN RELACIÓN AL BODY SI NO HAY NINGÚN ELEMENTO PRIMARIO QUE SEA RELATIVE
+
+acepta valoreS top, bottom, left, right
+
+acepta z-index
+
+*/
+
+.box-absolute {
+    background-color: blue;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 500px;
+    top: 0;
+    z-index: 0;
+}
+
+.container-relativo {
+    position: relative;
+    width: 100%;
+    background-color: bisque;
+    height: 500px;
+    z-index: 0;
+}
+
+/*
+POSITION STICKY: EL COMPORTAMIENTO DEL ELEMENTO ES RELATIVO HASTA QUE SE INDICA UN PUNTO DE QUIEBRE, EN ESA INSTANCIA EL ELEMENTO ES DESPLAZADO POR EL FLUJO DEL DOCUMENTO
+
+ACEPTA TOP, BOTTOM, LEFT, RIGHT
+
+Y ACEPTA z-index
+
+*/
+
+.nav-sticky {
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+

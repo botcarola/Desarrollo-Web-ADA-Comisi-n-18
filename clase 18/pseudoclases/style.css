@@ -1,0 +1,88 @@
+#form-productos {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 1px solid grey;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(244, 238, 230);
+}
+
+label, input {
+    margin: 10px 0px;  
+}
+
+/* LA PSEUDOCLASE FOCUS PERMITE LOS CAMBIOS SOBRE LA VISUALIZACIÓN DE FOCO EN ELEMENTOS INTERACTIVOS*/
+
+input:not(input[type="submit"]):not(input[type="email"]):focus {
+    background-color: red;
+}
+
+select:focus, textarea:focus {
+    background-color: purple;
+    color: white;
+}
+
+/*
+ LA PSEUDOCLASE :TARGET SE UTILIZA PARA APLICAR UN ESTILO A UN ELEMENTO AL QUE HEMOS SIDO DIRECCIONADOS A TRAVÉS DE UNA ETIQUETA A 
+*/
+
+p:target {
+    background-color: gold;
+}
+
+/* 
+p:target:before {
+    background-color: gold;
+    content: "ESTE ES EL TEXTO";
+} */
+
+
+/* LA PSEUDOCLASE CHECKED  SE UTILIZA PARA SELECCIONAR ELEMENTOS DE ENTRADA QUE ESTÉN SELECCIONAR O MARCADOS, COMO LO SERÍA UNA CASILLA DE VERIFICACIÓN*/
+
+input[type="checkbox"]:checked::after {
+    content: "😈";   
+}
+
+input[type="checkbox"]:checked {
+    width: 10px;
+    height: 10px;
+}
+
+/*
+LA PSEUDOCLASE :valid VALIDA SE UTILIZA PARA SELECCIONAR ELEMENTOS DE ENTRADA QEU SON VÁLIDOS SEGÚN LAS REGLAS DE VALIDACIÓN DEL FORMULARIO
+
+LA PSEUDOCLASE :invalid se utiliza para seleccionra elementos de entrada que son inválidos segúns las reglas de validación del formulario
+
+*/
+
+input[type="email"] {
+    border: 4px solid pink;
+}
+
+input[type="email"]:valid {
+    border: 4px solid rgb(89, 0, 190);    
+    background-color: green;
+}
+
+input[type="email"]:invalid {
+    border: 4px solid red;
+}
+
+/* : placeholder-shown PERMITE MODIFICAR AL TEXTO PROVISIONAL EN UN ELEMENTO INPUT O ELEMENTO TEXTAREA, QUE TENGA UN PLACEHOLDER VISIBLE */
+
+::placeholder {
+    background-color: aqua;
+    font-size: 20px;
+    color: white;    
+}
+
+/* LOS PSEUDOELEMENTOS (AFTER, BEFORE Y PLACEHOLDER) LLEVAN :: EN VEZ DE UNO 
+
+EJ
+
+::placeholder
+::after
+::before
+
+*/
