@@ -1,0 +1,101 @@
+.pista {
+    height: 900px;
+    background-color: rgb(211, 211, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-space-awesome {
+    font-size: 100px;
+    /* transition: transform 2s; */
+}
+
+/* TRANSFORM ES UNA PROPIEDAD QUE INDICA TRANSFORMACIONES DEL ELEMENTO
+PUEDE CAMBIAR SU TAMAÑO O PUNTO EN EL MAPA
+
+TRANSLATE PERMITE EL DESPLAZAMIENTO DE UN ELEMENTO ENTRE LOS EJES X E Y 
+
+traslante que permite desplazar sobre el eje y, hacia arriba, eso hace que el valor sea negativo
+*/
+
+.pista:hover .fa-space-awesome {
+    transform: translate(0, -400px);    
+}
+
+/**/
+
+.pista:hover .fa-space-awesome {
+    transform: translate(0, 400px);
+}
+
+/**/
+
+.pista:hover .fa-space-awesome {
+    transform: translate(400px, 0);
+}
+
+/**/ 
+
+.pista:hover .fa-space-awesome {
+    transform: translate(-400px, 0);
+}
+
+.ball {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    clip-path: circle(50% at center); 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 25px;
+    font-weight: 900;       
+}
+
+.rotate, .scale, .skew {
+    transition: background-color, transform, 3s;
+}
+
+/*rotate rota al elemento, se debe pasar un valor Xdeg, que representa a los grados
+en el caso de que se pasen grados positivos, el movimiento va en sentido horario
+en el caso de que se pase negativo, el movimiento va en sentido antihorario
+*/
+
+.rotate:hover {
+    transform: rotate(-45deg);
+    background-color: blueviolet;
+}
+
+/*
+
+scale
+
+sccale escala un elemento en términos de su tramaño en los ejes x e y
+
+recibe dos valores, relacionados al eje x e y
+
+sintaxtis
+
+transform: scale( x, y)
+
+ej:
+
+transform: scale( 0.5, 1.0)
+
+en donde 0.5 escala un 50% adicional de su tamaño original relativo al eje x
+
+en donde 1.0 escala un 100% adicional de su tamano original relatico al eje y
+
+*/
+
+.scale:hover {
+    transform: scale(1.0, 0.5);
+}
+
+/**/
+
+.skew:hover {
+    transform: skew(20deg, -10deg);
+}

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 1000px;
+    background-color: rgb(220, 248, 220);
+}
+
+.ball {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    clip-path: circle(50% at center); 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 25px;
+    font-weight: 900;
+    transition: transform, 3s;    
+}
+
+.container:hover .ease{
+    transform: translate(1000px);  
+    transition-timing-function: cubic-bezier(1.0, 0.1, 0.25, 1.0);
+    transition-delay: 2s;
+}
+
+/* SINTAXIS FUNCIÓN CUBIC-BEZIER
+
+    cubic-bezier(x1, y1,x2, y2)
+    RECIBE VALORES ENTRE 0 Y 1.0
+
+*/
+
+.container:hover .linear {
+    transform: translate(1000px);   
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.container:hover .ease-in {
+    transform: translate(1000px);  
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+}
+
+.container:hover .ease-out {
+    transform: translate(1000px);    
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+.container:hover .ease-in-out {
+    transform: translate(1000px);    
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+

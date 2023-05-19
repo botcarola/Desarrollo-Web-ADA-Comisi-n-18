@@ -1,0 +1,50 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.caja:hover {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    /* transition: ; */
+    /* transition-property: background-color, width, height;
+    transition-duration: 3s; */
+    transition: background-color, width, height, 3s;
+}
+
+
+/* EJEMPLO DE TRANSICIÓN SOBRE BOTÓN ENVIAR */
+
+button {
+    padding: 10px;
+    margin: 30px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    color: rgb(35, 34, 34);
+    font-weight: 300;
+    border: 1px solid rgb(216, 215, 215);
+    box-shadow: 3px 3px 0 purple;
+    transition: transform, box-shadow, 2s;
+}
+
+/* LA PSEUDOCLASE ACTIVE DEFINE QUE AL HACERSE CLICK SOBRE UN ELEMENTO INTERACTIVO, EN ESTE CASO EL BOTÓN, VA A GENERARSE UN CAMBIO ENTRE LOS VALORES ANTERIORES Y EL VALOR NUEVO, DEFINIDO EN LA PSEUDOCLASE*/
+
+button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;        
+}
