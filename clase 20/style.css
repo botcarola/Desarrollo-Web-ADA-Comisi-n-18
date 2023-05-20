@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-contacto {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.contacto-container {
+    width: 60%;
+    height: 400px;
+    background-color: aqua;
+    margin: 70px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-redes, .contacto-form {
+    width: 40%;
+    background-color: gold;
+
+}
+
+@media (max-width: 600px) {
+    .contacto-container {
+        flex-direction: column;
+    }
+
+    .contacto-redes, .contacto-form {
+        width: 100%;
+    }
+}

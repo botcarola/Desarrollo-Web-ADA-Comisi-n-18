@@ -1,0 +1,92 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.add-cart {
+    background-color: #823aa0;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    overflow: hidden;    
+}
+
+.add-cart i {    
+    transform: translate(0px, -35px);    
+    font-size: 25px;   
+}
+
+.add-cart p {
+    transform: translate(0px, -12px);    
+}
+
+.add-cart i, p {
+    transition: 200ms;
+}
+
+.add-cart:hover i {
+    transform: translate(0px, 14px);
+}
+
+.add-cart:hover p {
+    transform: translate(0px, 30px);
+
+}
+/**/
+
+.hover-style {
+    margin: 30px;
+    padding: 15px 40px;    
+    background-color: #226fbe;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid transparent;   
+}
+
+.hover-style:hover {
+    color: #226fbe;
+    background-color: white;
+    border: 1px dashed#226fbe;
+}
+
+/**/
+
+.button-continue {
+    margin: 30px;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #2ecc71;
+    color: white;
+    border: 2px solid white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.container-continue {
+    background-color: grey;
+}
+
+.button-continue .fa-solid {
+    transform: translate(-8px, 0px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.button-continue span {
+    margin-left: 10px;   
+}
+
+.button-continue:hover .fa-solid {
+    transform: translate(16px, 0px);
+    opacity: 1;    
+}
+
+.button-continue:hover {
+    background-color: #0f9f4b;
+}
