@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        * UTILIZAR NOMBRES DESCRIPTIVOS PARA QUE CUALQUIERA UQE LEA EL CÓDIGO PUEDA COMPRENDER FÁCILMENTE SU PROPÓSITO Y FUNCIONALIDAD 
+
+        * SER COHERENTE PARA GENERAR UNA CONSISTENCIA EN RELACIÓN A LOS NOMBRES DE LAS CLASES (SE PUEDE USAR UN PARADIGMA COMO BEM O SMACSS)
+
+        * EVITAR ESTILOS EN NOMBRE DE CLASES, HAY QUE SEPARAR A LA LÓGICA DE LA APARIENCIA VISUAL  
+
+        *UTILIZA NOMBRES SEMÁNTICOS: NOMBRES QUE REFLEJEN EL PROPÓSITO Y LA FUNCIÓN DEL ELEMENTO EN LUGAR DE LA APRIENCIA VISUAL.
+
+    -->
+
+    <div class="contenedor-productos">
+        <div class="tarjeta-producto">
+            <div class="contenedor-img">
+                <img src="/" class="tarjeta-img">
+            </div>         
+            <h2 class="titulo-tarjeta">
+                PELOTA DE FÚTBOL
+            </h2>   
+        </div>   
+        <div class="tarjeta-producto">
+            <div class="contenedor-img">
+                <img src="/" class="tarjeta-img">
+            </div>         
+            <h2 class="titulo-tarjeta  subtitulo-seccion">
+                PELOTA DE FÚTBOL
+            </h2>   
+        </div>                      
+    </div>
+
+    <!--
+        1 - UTILIZAR NOMBRES DESCRIPTIVOS Y EVITAR ABREVIACIONES 
+        Los nombres de clase tienen que ser descriptivos y reflejar el propósito y la función del elemento al que se aplican.
+
+        ESTO ES UNA MALA PRÁCTICA
+    -->
+    <div class="cont-stl-black"></div>
+
+    <!-- BUENA PRÁCTICA -->
+
+    <div class="contenedor-tarjetas"></div>
+
+    <!--
+        2 - EVITAR NOMBRES DEMASIADO LARGOS
+
+        ESTO ES UNA MALA PRÁCTICA, PORQUE NO ES CONCISO 
+    -->
+    <div class="contenedor-tarjetas-en-oferta"></div>
+    
+    <!-- BUENA PRÁCTICA -->
+    <div class="contenedor-tarjetas contenedor-oferta"></div>
+
+    <!-- 3 - ESCRIBIR NOMBRES con convenciones:
+        UNA CONVENCIÓN ES UNA FORMA DE NOMBRAR CLASES O IDENTIFICADORES, HAY DIFERENTES FORMAS
+
+        kebab-case: es una convención uqe propone escribir los nombres de las clase, separando las palabras por un guión medio
+
+        ej: <i class="fa-solid fa-moon"/>
+
+        snake_case: es una convención que propone separar las palabras de una clase a través de un guión bajo
+
+        <div class="container_card"></div>
+
+        <div class="container__card"></div>
+
+        camelCase: esta convención propone la diferenciación de las palabras a través de la mayúscula de la primer letra de la palabra siguiente
+        containerCard
+        formContacto
+    -->
+    <!-- 4 - EVITAR SELECTORES DE ETIQUETA 
+        Es recomendable evitar utilizar selectores de etiqueta (ej: div, section, article, nav, footer, Y TODOS LOS DEMÁS)
+        Los selectores de etiqueta son demasiado generales y pueden generar conflictos, ya que afectan a todos los elementos que coincidan con los estilos desarrollados sobre el selector de esta etiqueta.
+    -->
+    <!--
+        5 - EVITAR USAR ID'S:
+        Los ids son atributos ÚNICOS en html, no se pueden reutilizar los IDS para aplicar estilos, además tienen una especificidad muy alta que puede pisar a otros selectores y generar conflictos.
+        
+
+        MALA PRÁCTICA
+    -->   
+
+    <div id="container-cards"></div>
+    <div id="container-cards"></div>
+
+    <!-- BUENA PRÁCTICA -->
+
+    <div class="container-cards"></div>
+    <div class="container-cards"></div>
+    <!--
+        6 - EVITAR SELECTORES COMPLEJOS: 
+        PREFERIR UNA CLASE POR SOBRE UN SELECTOR COMPLEJO, los selectores complejos como descendientes o de hermanos pueden afectar negativamente el rendimiento y la mantenibilidad del código.
+    -->
+    <!--
+        7 - UTILIZAR PREFIJOS (por ejemplo "is" para el estado):
+        Los prefijos pueden ser útiles para indicar el propósito o estado de una clase.
+        Cuando usamos el prefijo is, nos estamos refiriendo a un estado.
+
+        is-hidden
+    -->
+    <!--
+        8 - UTILIZAR CLASES COMPUESTAS POR PADRE-HIJO: 
+        Al combinar clases en CSS, podemos utilizar una cenvención que refleje la relación entre los elementos padre-hijo.
+    -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--
+        9 - SER CONSISTENTES
+        MANTENER LA CONSISTENCIA DE LA NOMENCLATURA
+
+        este código no es consistente, porque arrancó respetando el paradigma y terminó haciendo cualquier cosa
+    -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="caja">
+            <h2 class="titulo"></h2>
+        </section>
+    </main>
+    <footer class="barra-inferior">
+
+    </footer>
+
+
+
+
+
+    
+</body>
+</html>
