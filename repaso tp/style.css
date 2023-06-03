@@ -1,0 +1,66 @@
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: antiquewhite;
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+.seccion-habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+.card-contenedor {
+    width: 50%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+@media screen and ( max-width: 1670px) {
+
+    .card-contenedor {
+        width: 60%;
+    }
+    
+}
+
+@media screen and ( max-width: 1380px) {
+
+    .card-contenedor {
+        width: 70%;
+    }
+    
+}
+
+@media screen and ( max-width: 1190px) {
+
+    .card-contenedor {
+        width: 80%;
+        background-color: red;
+    }
+    
+}
+
+@media screen and ( max-width: 1040px) {
+
+    .card-contenedor {
+        width: 100%;
+        background-color: red;
+    }
+    
+}
+
+@media screen and ( max-width: 840px) {
+
+    .card-contenedor {
+        width: 80%;
+        background-color: red;
+    }
+    
+}
+
+:focus {
+    background-color: red;
+}

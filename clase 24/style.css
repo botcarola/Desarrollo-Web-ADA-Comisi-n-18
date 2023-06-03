@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 40px;
+    background-color: red;
+}
+
+label, input {
+    padding: 10px;
+}
+
+form:hover label {
+    color: blue;
+    font-weight: 900;
+    background-color: orange;
+}
+
+form:hover input {
+    color: violet;
+    font-weight: 900;
+    background-color: rgb(50, 0, 66);
+}
